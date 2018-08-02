@@ -9,11 +9,16 @@
 </head>
 
 <body>
-    <div id="game-controller">
-
+    <div id="GameController">
+        <label>X</label>
+        <label id="ShowScoreOfPlayerX">0</label>
+        <label>Y</label>
+        <label id="ShowScoreOfPlayerY">0</label>
+        <label>Turn Of</label>
+        <label id="ShowPlayerInTurn">X</label>
     </div>
-    <div id="game-board">
-        <table id="game-grid" border="1px solid black">
+    <div id="GameBoard">
+        <table id="GameGrid" border="1px solid black">
             <%
                 for (int row = 1; row <= 3; row++) {
                     out.println("<tr>");
@@ -24,7 +29,7 @@
             %>
         </table>
     </div>
-    <button id="restart-game">Restart Game</button>
+    <button id="GameRestartButton">Restart Game</button>
     <script src="assets/game.js"></script>
 </body>
 
